@@ -34,8 +34,8 @@ Predicts whether a loan applicant is a **good** or **bad** credit risk using the
 
 The baseline model has higher overall accuracy, but it misses over half of the genuinely risky applicants (approves them anyway) because it leans on the majority "good credit" class. The class-balanced model catches significantly more risky applicants (fewer costly bad loans) at the cost of rejecting more good applicants (lost business). **Which model is "better" depends on the bank's risk appetite** — this isn't purely a technical choice, it's a business one. ROC-AUC (threshold-independent) stays roughly the same across both, confirming the underlying model quality didn't change — only the decision threshold behavior did.
 
-![Confusion Matrix](outputs/confusion_matrix.png)
-![Feature Importance](outputs/feature_importance.png)
+![Confusion Matrix](confusion_matrix.png)
+![Feature Importance](feature_importance.png)
 
 ### What drives the prediction
 
